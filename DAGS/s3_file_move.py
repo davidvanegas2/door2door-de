@@ -18,7 +18,7 @@ bucket_glue = 'aws-glue-assets-719386081370-us-east-1'
 
 def move_files(ds, **kwargs):
     logging.info('Starting move_files task...')
-    print(f"HELLO LOKA WORLD ---------------------------------")
+    print(f"Start move files from {source_key} to {destination_bucket}")
 
     # Get the previous day's date
     execution_date = datetime.strptime(ds, '%Y-%m-%d')
